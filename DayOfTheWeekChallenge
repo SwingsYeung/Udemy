@@ -1,0 +1,111 @@
+package academy.learnprogramming;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        char switchValue = 'd';
+        switch (switchValue){
+            case 'A':
+                System.out.println("A was found");
+                break;
+
+            case 'B':
+                System.out.println("B was found");
+                break;
+
+            case 'C': case 'D': case 'E':
+
+                System.out.println( switchValue + " was found");
+                break;
+
+            default:
+                System.out.println("Could not find A, B, C, D, or E");
+                break;
+        }
+    printDayOfTheWeek(1);
+    printDayOfTheWeekByIf(7);
+    }
+
+    private static void printDayOfTheWeek(int day){
+        day = 1;
+        switch (day){
+            case 0:
+                System.out.println("Sunday");
+                break;
+
+            case 1:
+                System.out.println("Monday");
+                break;
+
+            case 2:
+                System.out.println("Tuesday");
+                break;
+
+            case 3:
+                System.out.println("Wednsday");
+                break;
+
+            case 4:
+                System.out.println("Thursday");
+                break;
+
+            case 5:
+                System.out.println("Friday");
+                break;
+
+            case 6:
+                System.out.println("Satday");
+                break;
+
+            default:
+                System.out.println("Invalid day");
+            break;
+        }
+    }
+
+//    private static void printDayOfTheWeekByIf(int day){
+//        if (day == 0){
+//            System.out.println("Sunday");
+//        }
+//        if (day == 1){
+//            System.out.println("Monday");
+//        }
+//        if (day == 2){
+//            System.out.println("Tuesday");
+//        }
+//        if (day == 3){
+//            System.out.println("Wednsday");
+//        }
+//        if (day == 4){
+//            System.out.println("Thursday");
+//        }
+//        if (day == 5){
+//            System.out.println("Friday");
+//        }
+//        if (day == 6){
+//            System.out.println("Sunday");
+//        }
+//        if (day != 0 && day != 1 &&day != 2 &&day != 3 &&day != 4 &&day != 5 && day != 6 ){
+//            System.out.println("Invalid value");
+//        }
+    private static void printDayOfTheWeekByIf(int day){
+       if (day == 0){
+           System.out.println("Sunday");
+       } else if (day == 1){
+           System.out.println("Monday");
+       } else if (day == 2){
+           System.out.println("Tuesday");
+       } else if (day == 3){
+           System.out.println("Wednsday");
+       } else if (day == 4){
+           System.out.println("Thursday");
+       } else if (day == 5){
+           System.out.println("Friday");
+       } else if (day == 6){
+           System.out.println("Sunday");
+       } else {
+           System.out.println("Invalid value");
+       }
+    }
+}
