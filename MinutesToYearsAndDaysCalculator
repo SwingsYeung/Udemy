@@ -1,0 +1,8 @@
+public static void printYearsAndDays(long minutes){
+        if (minutes >= 0){
+            System.out.println(minutes + " min = " + (round(minutes / (365*24*60)))
+                    + " y and " + ((minutes % (365*60*24)) /(60*24)) + " d");
+        } else {
+            System.out.println("Invalid Value");
+        }
+    }
