@@ -1,0 +1,12 @@
+  public static boolean isCatPlaying(boolean summber, int temperature) {
+        if (temperature > 45 || temperature < 25) {
+            return false;
+        }
+        if (summber == false && temperature <= 35 && temperature >= 25) {
+            return true;
+        } else if (summber == true && temperature <= 45 && temperature >= 25) {
+            return true;
+        } else {
+            return false;
+        }
+    }
