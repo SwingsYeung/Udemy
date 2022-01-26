@@ -1,0 +1,12 @@
+    public static void printEqual(int g, int h, int i){
+        if (g < 0 || h < 0 || i < 0){
+            System.out.println("Invalid Value");
+        } else if (g == h && g == i && h == i){
+            System.out.println("All numbers are equal");
+        } else if (g != h && g != i && i != h){
+            System.out.println("All numbers are different");
+        } else {
+            System.out.println("Neither all are equal or different" );
+        }
+
+    }
