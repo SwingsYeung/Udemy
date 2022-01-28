@@ -1,0 +1,21 @@
+    public static int sumFirstAndLastDigit(int number){
+        int variable = 0;
+        if (number < 0){
+            return -1;
+        }
+        if (number < 10){
+            return (number%10)*2;
+        }
+        else variable += number%10;
+        {while(number > 0){
+            number = number /10;
+            if (number >= 10){
+                continue;
+            }
+            if (number <10){
+                variable += number%10;
+                return variable;
+            }
+        }
+      }return variable;
+    }
