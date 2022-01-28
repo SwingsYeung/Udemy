@@ -1,0 +1,19 @@
+  public static boolean isPrimeNumber(int number) {
+        int countNumber = 0;
+        for (int i = 2; i <= number; i++) {
+            int checkNumber = number % i;
+            if (i < number && checkNumber != 0) {
+                continue;
+            }
+            if (i < number && checkNumber == 0){
+                    return false;
+            }
+            if (i >= number && checkNumber == 0) {
+                countNumber = i;
+                if (countNumber == number) {
+                    return true;
+                }
+            }
+        }
+                    return false;
+    }
