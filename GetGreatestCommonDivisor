@@ -1,0 +1,15 @@
+   public static int getGreatestCommonDivisor(int first, int second){
+        if (first >= 10 && second >= 10){
+            int count = 0;
+            int sum = 0;
+            for (int i = 1; i <= first && i <= second; i++ ){
+                int firstNumber  = first  % i;
+                int secondNumber = second % i;
+                if (firstNumber == 0 && secondNumber == 0){
+                count = i;
+            }
+
+            }return count;
+        }
+            return -1;
+    }
