@@ -1,0 +1,24 @@
+public static boolean isPerfectNumber(int number){
+        if (number < 1){
+            return false;
+        }
+        int divisor = 1;
+        int sum = 0;
+        while (number > 0){
+            int factor = number % divisor;
+            int lastDivisor =divisor;
+            divisor++;
+            if (factor != 0){
+                continue;
+            }
+            sum += lastDivisor;
+            if (number == lastDivisor){
+                sum -= number;
+                break;
+            }
+        }
+        if (sum == number){
+            return true;
+        }
+            return false;
+    }
